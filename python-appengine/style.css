@@ -1,0 +1,309 @@
+  /*
+
+000000
+ffffff
+ddcccc
+aa9999
+ff1111
+
+  */
+  
+  BODY {
+      /*  background-color: #eeffff; */
+        background-color:#ffffff;
+        margin-top: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    A, BODY, INPUT, OPTION, SELECT, TABLE, TD, TR, P, LI {
+        font-family: arial;
+        font-size: 12px;
+    }
+
+    A {
+        font-family: arial;
+        font-size: 12px;
+        color: #000000;
+        font-weight: bold;
+        TEXT-DECORATION: underline;
+    }
+
+    .clipHead {
+        font-family: arial;
+        font-size: 32px;
+    }
+
+    .clipHeadSmall {
+        font-family: arial;
+        font-size: 24px;
+    }
+
+    .ohw {
+        width: 100%;
+        background-color:#FFFADB;
+        /*background-image:url(/cl1p-inc-rgdm/images/paper.gif);
+        background-repeat: repeat; */
+    }
+    .optionsBox{
+	
+      
+     }
+     .menuBox{
+	background-color:#55ffff;
+        color:#000000;
+        border:1px solid black;
+    }
+
+#ctrlcv{
+	 width: 100%;
+        background-color:#FFFADB;	
+}
+.clipHead{font-family:arial; font-size:32px}
+.clipHeadSmall{font-family:arial; font-size:24px}
+.bl{font-family:arial; font-size:24px;font-weight:bold;}
+.canDo1{font-family:arial; font-size:24px;font-weight:bold;color:#000000;}
+.canDo2{font-family:arial; font-size:24px;font-weight:bold;color:#ddcccc;}
+.canDo3{font-family:arial; font-size:24px;font-weight:bold;color:#998888;}
+.canDo4{font-family:arial; font-size:24px;font-weight:bold;color:#ff1111;}
+
+
+
+.jumpText{
+	font-family:arial; font-size:24px;font-weight:bold;
+	border: 1px solid black;
+	}
+
+.sm{font-family:arial; font-size:16px}
+
+
+
+  .buyLi{
+     font-family: arial;
+        font-size: 18px;
+       font-weight:bold;
+  }
+
+  .buyText{
+       font-family: arial;
+        font-size: 18px;
+    
+  }
+  
+  .richTextStyle{
+  	overflow: auto;
+  }
+  
+b.rtop, b.rbottom{display:block;background: #FFF}
+b.rtop b, b.rbottom b{display:block;height: 1px;
+    overflow: hidden; background: #9BD1FA}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
+
+
+
+div#options_Selector{
+	cursor:pointer;cursor:hand;
+}
+div#security_Selector{
+	cursor:pointer;cursor:hand;
+
+}
+div#account_Selector{
+	cursor:pointer;cursor:hand;
+}
+
+
+div#buy_Selector{
+	cursor:pointer;cursor:hand;
+}
+
+.controlDiv{
+   }
+
+.oddRow{
+    background-color:#fffffa;
+
+}
+.evenRow{
+    background-color:#fdffd0;
+    
+}
+
+.rowMouseOver{
+  background-color:lightblue;
+  color:black;
+}
+
+.rowSelected{
+    background-color:lightblue;
+    font-weight:bold;
+    color:black;
+}
+	
+
+  .errMsg{
+      color:red;
+  }
+
+ 
+.idCol{    
+    width:50px;
+    overflow:hidden;
+}
+.usernameCol{
+    width:100px;
+    overflow:hidden;
+}
+.emailCol{
+        width:150px;
+    overflow:hidden;
+}
+.disabledCol{
+        width:50px;
+    overflow:hidden;
+}
+
+table.clipTable {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: gray gray gray gray;
+	border-collapse: collapse;
+}
+table.clipTable th {
+	border-width: 1px 1px 1px 1px;
+	padding: 4px 4px 4px 4px;
+	border-style: inset inset inset inset;
+	border-color: gray gray gray gray;
+	background-color: lightgray;
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+table.clipTable td {
+	border-width: 1px 1px 1px 1px;
+	padding: 4px 4px 4px 4px;
+	border-style: inset inset inset inset;
+	border-color: gray gray gray gray;
+
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+
+
+
+.odd{
+    background-color:#fffffa;
+
+}
+.even{
+      background-color:#fdffd0;
+}
+
+
+
+.sorted	/*assigned to the th tag of the sorted column*/
+order1	/*assigned to the th tag of the sorted column if sort order is ascending */
+order2	/*assigned to the th tag of the sorted column if sort order is descending*/
+sortable	/*assigned to the th tag of a sortable column*/
+.buyLink{
+    text-decoration:none;
+    font-weight:bold;
+    font-size:1.25em;
+}
+.clipLink{
+    text-decoration:none;
+    font-weight:bold;
+    font-size:1.1em;
+}
+  
+div.close-button-div{
+  position:absolute;
+  bottom:3;
+  right:3;
+}
+
+  .popup{
+  border:2px solid black;
+    background-color:#E0E0E0;
+    position:absolute;
+    display:none;
+    padding:3px;
+      z-index:10;
+         }
+  #fileUploadDiv{
+      
+  }
+
+  /* New LAYOUT START*/
+	.thetable		{
+	position: relative;
+	display: table;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	clear: both;
+	border-spacing: 0; /* required by Opera 6 */
+	}
+
+	 /* hide this from opera6 */
+	head:first-child+body div.thetable {height: 100%;}
+
+	.tablerow		{display: table-row;}
+
+	.tablecell	{
+	display: table-cell;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	vertical-align: top;
+	min-height: 100%; /* opera6 needs min-height but moz/IE needs height */
+	}
+
+	 /* hide this from opera6 */
+	head:first-child+body div.tablecell {height: 100%;}
+	/* added for mozilla which worked for others too, but op6 still needed min-height so hide this rule */
+
+	.one				{
+	width: 50px;
+    background: #E1E1E1; 
+	position: relative;
+/*	border-right: 1px dotted #000; */
+	z-index: 5;
+	}
+	.two				{
+	width: auto;
+	/*background: yellow;*/
+	position: relative;
+	}
+	.three			{
+	width: 122px;
+	/*background: lime; */
+	position: relative;
+/*	border-left: 1px dotted #000;*/
+	}
+
+	#header		{
+	position: absolute;
+	top: 0; left: 0;
+	height: 50px;
+	background: #E1E1E1;
+	/*color: #fff;*/
+	width: 100%;
+	z-index: 10;
+	/*border-bottom: 2px dotted lime; */
+	}
+   /* New LAYOUT END*/
+
+
+.textC{
+	
+	border:3px solid black;
+}
+
+  .menuBtn{
+      width:110px;
+  }
