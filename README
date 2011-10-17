@@ -1,0 +1,8 @@
+cl1p.net was written in Java. This ment some hefty hosting fees as Java needs a ton of memory. I have attempted to re-write cl1p.net a number of times but have never had the time to complete them.
+
+
+
+./php/ This is an old rewrite of cl1p.net for PHP, it is incomplete and I'm not sure if it works at all. But a good starting point for php devs.
+
+./python-appengine/ Most sucesfull rewrite. Basic functions work.
+

@@ -1,0 +1,15 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /var/www/cl1pphp/.htpasswd 
+AuthGroupFile /dev/null 
+require valid-user
+# don't forget about file-edit.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /cl1p-code/controller.php [L]
+</IfModule>
+
+
