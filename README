@@ -6,3 +6,6 @@ cl1p.net was written in Java. This ment some hefty hosting fees as Java needs a 
 
 ./python-appengine/ Most sucesfull rewrite. Basic functions work.
 
+./java/ The current code for cl1p.net. Requires java 1.6, Apache Ant and Apache Tomcat, and a MySql database. 
+Once configured with the right properties file it will connect to the database and it should create the tables and be
+ready to run. To build and -f ant.xml build.war
