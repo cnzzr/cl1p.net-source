@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+  "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>1.2</jsp-version>
+  <short-name>Application Tag Library</short-name>
+  <uri>http://java.sun.com/jstl/xml</uri>
+  <display-name>JSTL XML</display-name>
+  <description>JSTL 1.0 XML library</description>
+
+  <tag>
+     <name>DateTime</name>
+     <tag-class>com.diodesoftware.scb.DateTimeTag</tag-class>
+     <attribute>
+         <name>epoch</name>
+         <required>true</required>
+         <rtexprvalue>true</rtexprvalue>
+     </attribute>
+ </tag>
+
+    <tag>
+       <name>DatePicker</name>
+       <tag-class>com.diodesoftware.scb.tag.DatePickerTag</tag-class>
+       <attribute>
+           <name>parameterName</name>
+           <required>true</required>
+           <rtexprvalue>true</rtexprvalue>
+       </attribute>
+        <attribute>
+            <name>style</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>styleClass</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>        
+   </tag>
+
+
+</taglib>
+

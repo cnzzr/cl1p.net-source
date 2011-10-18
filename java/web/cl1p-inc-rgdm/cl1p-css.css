@@ -1,0 +1,150 @@
+  BODY {
+      /*  background-color: #eeffff; */
+        background-color:#ffffff;
+        margin-top: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    A, BODY, INPUT, OPTION, SELECT, TABLE, TD, TR, P, LI {
+        font-family: arial;
+        font-size: 12px;
+    }
+
+    A {
+        font-family: arial;
+        font-size: 12px;
+        color: #000000;
+        font-weight: bold;
+        TEXT-DECORATION: underline;
+    }
+
+    .clipHead {
+        font-family: arial;
+        font-size: 32px;
+    }
+
+    .clipHeadSmall {
+        font-family: arial;
+        font-size: 24px;
+    }
+
+    .ohw {
+        width: 100%;
+    }
+    .optionsBox{
+
+
+     }
+     .menuBox{
+	background-color:#55ffff;
+        color:#000000;
+        border:1px solid black;
+
+    }
+.clipHead{font-family:arial; font-size:32px}
+.clipHeadSmall{font-family:arial; font-size:24px}
+.bl{font-family:arial; font-size:24px;font-weight:bold;}
+.sm{font-family:arial; font-size:16px}
+
+
+  .textC{
+ border: 1px solid black;
+      height:150px;
+    padding-left:5px;
+      padding-right:5px;
+      background-color:#ddcccc;
+  }
+ 
+
+.midCell{
+ border: 1px solid black;
+     height:165px;
+     background-color:#ddcccc;
+    padding-left:5px;
+      padding-right:5px;
+    
+}
+
+  .buyUrlCell{
+     border: 1px solid black;
+     height:165px;
+     background-color:#ddcccc;
+
+
+}
+  .buyUrlTitle{
+      font-family:arial; font-size:16px;font-weight:bold;
+  }
+  .buyUrlText{
+       font-family:arial; font-size:12px;font-weight:bold;
+  }
+
+
+
+  .fileMid{
+     border: 1px solid black;
+    padding-top:2px;
+      padding-bottom:2px;
+    padding-left:5px;
+      padding-right:5px;
+      background-color:#ddcccc;
+  }
+
+
+    .historyViewLeft{
+    width:13px;
+
+      height:373px;
+      background-image: url("/cl1p-inc-rgdm/images/view_hist_left.gif");
+  }
+  .historyViewMid{
+      height:373px;
+      background-image: url("/cl1p-inc-rgdm/images/view_hist_mid.gif");
+  }
+
+  .historyViewRight{
+       width:14px;
+      height:373px;
+      background-image: url("/cl1p-inc-rgdm/images/view_hist_right.gif");
+  }
+
+    .historyChangesTop{
+   width:169px;
+
+      height:9px;
+      background-image: url("/cl1p-inc-rgdm/images/changes_top.gif");
+  }
+  .historyChangesMid{
+      width:169px;
+      background-image: url("/cl1p-inc-rgdm/images/changes_mid.gif");
+  }
+
+  .historyChangesBottom{
+      width:169px;
+      height:12px;
+      background-image: url("/cl1p-inc-rgdm/images/changes_b.gif");
+  }
+
+
+  .signupMid{
+      border: 1px solid black;
+    padding-left:5px;
+      padding-right:5px;
+      height:150px;
+      background-color:#ddcccc;
+  }
+
+
+
+  .buyLi{
+     font-family: arial;
+        font-size: 18px;
+
+  }
+
+  .buyText{
+       font-family: arial;
+        font-size: 18px;
+      font-weight:bold;
+  }

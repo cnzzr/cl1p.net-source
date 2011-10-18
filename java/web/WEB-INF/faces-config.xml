@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+
+<!DOCTYPE faces-config PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN" "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+
+<faces-config xmlns="http://java.sun.com/JSF/Configuration">
+
+   <!-- <application>
+        <view-handler>
+            com.icesoft.faces.facelets.D2DFaceletViewHandler
+        </view-handler>
+    </application>
+
+
+  <managed-bean>
+        <managed-bean-name>test</managed-bean-name>
+        <managed-bean-class>com.diodesoftware.scb.beans.TestBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+  <managed-bean>
+        <managed-bean-name>sysop</managed-bean-name>
+        <managed-bean-class>com.diodesoftware.scb.beans.SysopBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+  <managed-bean>
+        <managed-bean-name>setting</managed-bean-name>
+        <managed-bean-class>com.diodesoftware.scb.beans.SettingsBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
+<navigation-rule>
+    <from-view-id>/*</from-view-id>
+    <navigation-case>
+      <from-outcome>users</from-outcome>
+      <to-view-id>/cl1p-admin/sysop/users.iface</to-view-id>
+      <redirect></redirect>
+    </navigation-case>      
+  </navigation-rule>
+
+    <navigation-rule>
+    <from-view-id>/*</from-view-id>
+    <navigation-case>
+      <from-outcome>settings</from-outcome>
+      <to-view-id>/cl1p-admin/sysop/settings.iface</to-view-id>
+      <redirect></redirect>
+    </navigation-case>
+  </navigation-rule>
+
+     <validator>
+
+    <validator-id>usernameValidator</validator-id>
+
+    <validator-class>com.diodesoftware.scb.validator.UsernameValidator</validator-class>
+
+  </validator>       -->
+
+
+</faces-config>
+

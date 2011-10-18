@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<project name="scb" basedir="." default="compile">
+
+    <property environment="env"/>
+
+    <property name="src" value="src"/>
+    <property name="build" value="build"/>
+    <property name="etomcat" value="etomcat"/>
+
+    <path id="project.class.path">
+        <fileset dir="lib/" includes="*.jar"/>
+        <pathelement location="${env.TOMCAT_HOME}/lib/servlet-api.jar"/>
+        <pathelement location="${env.TOMCAT_HOME}/lib/jsp-api.jar"/>
+    </path>
+
+    <target name="compile" description="Compile java source">
+        <mkdir dir="${build}"/>
+        <javac destdir="${build}" target="1.5"
+               debug="true">
+            <src path="${src}"/>
+            <classpath refid="project.class.path"/>
+        </javac>
+    </target>
+
+    <target name="clean" description="Delete java class files">
+        <delete includeEmptyDirs="true">
+            <fileset dir=".">
+                <include name="**/*.class"/>
+                <include name="**/*.jsp~"/>
+            </fileset>
+        </delete>
+        <delete dir="${build}"/>
+        <delete dir="${qa-build}"/>
+    </target>
+
+    <target name="build.war" depends="compile" description="Build war file">
+        <war destfile="clip.war" basedir="web"
+             excludes="web/WEB-INF/web.xml" webxml="web/WEB-INF/web.xml">
+            <classes dir="${build}"/>
+            <lib dir="lib"/>
+        </war>
+    </target>
+
+    <target name="copy.site" depends=" build.war" description="Copy to tomcat">
+        <copy file="clip.war" tofile="${env.TOMCAT_HOME}/webapps/ROOT.war"/>
+    </target>
+
+</project>

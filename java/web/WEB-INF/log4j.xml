@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="R" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="/home/rob/clip.log"/>
+
+        <param name="MaxFileSize" value="1000KB"/>
+        <param name="MaxBackupIndex" value="10"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd MMM HH:mm:ss} %F - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="H" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="/home/rob/clip.hits.log"/>
+
+        <param name="MaxFileSize" value="1000KB"/>
+        <param name="MaxBackupIndex" value="10"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss,SSS} %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="E" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="/home/rob/clip.email.log"/>
+
+        <param name="MaxFileSize" value="1000KB"/>
+        <param name="MaxBackupIndex" value="10"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss,SSS} %m%n"/>
+        </layout>
+    </appender>
+
+
+    <category name="hits">
+        <priority value="debug"/>
+        <appender-ref ref="H"/>
+    </category>
+
+    <category name="email">
+        <priority value="debug"/>
+        <appender-ref ref="E"/>
+    </category>
+
+
+    <category name="com">
+        <priority value="warn"/>
+        <appender-ref ref="R"/>
+    </category>
+
+    <category name="com.diodesoftware.scb.ClipFilter">
+        <priority value="warn"/>
+        <appender-ref ref="R"/>
+    </category>
+
+    <category name="jsp">
+        <priority value="warn"/>
+        <appender-ref ref="R"/>
+    </category>
+
+
+</log4j:configuration>
